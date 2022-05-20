@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230612495673",
+    "project_id": "gsbfund",
+    "storage_bucket": "gsbfund.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230612495673:android:97ab031c8e8bcfa16c0ce8",
+        "android_client_info": {
+          "package_name": "com.dreamapp.glamshinebufferfund"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230612495673-fehtmrnlj7pfcl1aif85n5nd1jsqhrp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcEuos_dmasHLLt2bwSRKMpdQoYWrruIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230612495673-fehtmrnlj7pfcl1aif85n5nd1jsqhrp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

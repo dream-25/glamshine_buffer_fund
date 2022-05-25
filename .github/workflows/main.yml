@@ -16,14 +16,14 @@ jobs:
           run: |
             flutter config --enable-web
             flutter pub get
-            flutter build web --web-renderer canvaskit --release 
+            flutter build web --web-renderer html --release
           working-directory: ./
 
         # Deploy Firebase Hosting
         - name: Deploy Firebase Hosting | Dream-25
           uses: w9jds/firebase-action@master
           with:
-            args: deploy --only hosting:gsbfund
+            args: deploy --only hosting:firstapp-15ed6
           env:
             FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
             PROJECT_PATH: ./

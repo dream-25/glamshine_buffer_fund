@@ -1,3 +1,4 @@
+
 name: Deploying Website To Firebase | Dream-25
 on: push
 jobs:
@@ -5,10 +6,14 @@ jobs:
       name: Deploy Website | Dream-25
       runs-on: ubuntu-latest
       steps:
-        - uses: subosito/flutter-action@v2
+        # Checkout Repository
+        - uses: actions/checkout@v1
+
+        # Install Flutter command
+        - uses: subosito/flutter-action@v1
           with:
-            flutter-version: '3.0.1'
-            channel: 'stable'
+            channel: 'dev'
+
         # Build Website
         - name: Build Website | Dream-25
           run: |
@@ -21,7 +26,7 @@ jobs:
         - name: Deploy Firebase Hosting | Dream-25
           uses: w9jds/firebase-action@master
           with:
-            args: deploy --only hosting:gsbfund
+            args: deploy --only hosting:dream-softwares
           env:
             FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
             PROJECT_PATH: ./

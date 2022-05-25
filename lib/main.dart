@@ -22,8 +22,10 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.red,
         ),
+        initialRoute: UserRoutes.userRootRoute,
         routes: {
-          UserRoutes.userrootRoute: (context) => const CommonSplash(),
+          UserRoutes.userRootRoute: (context) => const CommonSplash(),
+          UserRoutes.userSplashRoute: (context) => const CommonSplash(),
         });
   }
 }

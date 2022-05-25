@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dreamapp.glamshinebufferfund">
    <application
-        android:label="glamshinebufferfund"
+        android:label="Glamshine Buffer Fund"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

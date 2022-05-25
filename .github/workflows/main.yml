@@ -17,6 +17,7 @@ jobs:
         # Build Website
         - name: Build Website | Dream-25
           run: |
+            flutter --version
             flutter config --enable-web
             flutter pub get
             flutter build web --web-renderer html --release
